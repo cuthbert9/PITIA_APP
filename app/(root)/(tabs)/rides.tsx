@@ -1,6 +1,6 @@
 import { View, Text, SafeAreaView } from "react-native";
 
-export const Home = () => {
+export const Rides = () => {
   return (
     <SafeAreaView className={"bg-white flex-1"}>
       <View>
@@ -10,4 +10,4 @@ export const Home = () => {
   );
 };
 
-export default Home;
+export default Rides;
