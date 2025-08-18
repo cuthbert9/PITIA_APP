@@ -1,16 +1,21 @@
 import { Image, Text, View } from "react-native";
-import { formatDate } from "@/lib/utils";
+import { formatDate, formatTime } from "@/lib/utils";
 import { Ride } from "@/types/type";
 import { Ionicons } from "@expo/vector-icons";
 import { images } from "@/constants/data";
 
 const RideCard = ({ ride }: { ride: Ride }) => {
+  const lat: number = -6.807706;
+  const lng: number = 39.258375;
+
   return (
     <View className="bg-[#F4F6F8] rounded-2xl px-3 py-4 mx-3 mb-3 shadow-2xl">
       {/* Top section: route */}
       <View className="flex flex-row items-start">
         <Image
-          source={images.driver}
+          source={{
+            uri: `https://maps.geoapify.com/v1/staticmap?style=osm-bright&width=600&height=400&center=lonlat:${lng},${lat}&zoom=14&apiKey=${process.env.EXPO_PUBLIC_GEOAPIFY_API_KEY}`,
+          }}
           style={{ width: 70, height: 70 }}
           className="rounded-md"
         />

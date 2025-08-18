@@ -17,7 +17,7 @@ const GoogleTextInput = ({
       <View className="flex flex-row items-center border w-10/12 h-12 border-gray-300 rounded-2xl  px-2">
         <Ionicons name="search" size={24} color="black" />
         <TextInput
-          placeholder="Where do You want to go ?"
+          placeholder="Where you wanna to send  ?"
           className="flex-1 ml-2"
         />
       </View>
