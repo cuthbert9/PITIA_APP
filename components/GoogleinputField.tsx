@@ -18,7 +18,7 @@ const GoogleTextInput = ({
         <Ionicons name="search" size={24} color="black" />
         <TextInput
           placeholder="Where you wanna to send  ?"
-          className="flex-1 ml-2"
+          className="flex-1 ml-2 text-gray-500"
         />
       </View>
     </View>

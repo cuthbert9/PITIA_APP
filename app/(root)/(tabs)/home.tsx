@@ -6,15 +6,16 @@ import {
   ScrollView,
   Image,
   FlatList,
+  TouchableOpacity,
 } from "react-native";
-import { Redirect } from "expo-router";
+import { Redirect, router } from "expo-router";
 import GoogleinputField from "@/components/GoogleinputField";
 import { Ionicons } from "@expo/vector-icons";
 import RideCard from "@/components/RideCard";
 import { useState } from "react";
 import Map from "@/components/Map";
 
-export const Home = () => {
+const Home = () => {
   // return <Redirect href={"/(auth)/welcome"} />;
 
   const [isloading, setIsLoading] = useState(false);
@@ -36,14 +37,27 @@ export const Home = () => {
           </View>
 
           <GoogleinputField />
+          {/*Mock location  */}
+
+          <TouchableOpacity
+            className={"mx-auto my-2 bg-gray-50 border-gray p-1"}
+            onPress={() => router.push(`/(root)/find-ride-ride`)}
+          >
+            <View>
+              <Text className={"text-lg"}>Dar-es-salaam, Tanzania</Text>
+            </View>
+          </TouchableOpacity>
+
+          {/*Mock location  End  */}
+
           <Text className={"text-2xl mx-8 my-4"}>Your Current Location</Text>
 
-          <View className={"w-[370px] h-[300px]  mx-4 rounded-2xl"}>
+          <View className={"w-[345px] h-[300px]  mx-1 rounded-2xl p-3"}>
             <Image
               source={{
                 uri: `https://maps.geoapify.com/v1/staticmap?style=osm-bright&width=600&height=400&center=lonlat:${lng},${lat}&zoom=14&apiKey=${process.env.EXPO_PUBLIC_GEOAPIFY_API_KEY}`,
               }}
-              style={{ width: 370, height: 300 }}
+              style={{ width: 345, height: 300 }}
               className="rounded-md"
             />
 

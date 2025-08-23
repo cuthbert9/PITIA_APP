@@ -9,14 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.PITIA"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "5438DC"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.PITIA"
     },
     "web": {
       "bundler": "metro",
@@ -28,7 +30,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/PTIA_logo.png",
+          "image": "./assets/images/PITIA_logo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#5438DC"

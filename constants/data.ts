@@ -1,7 +1,8 @@
 import driver from "../assets/images/driver.png";
-
+import message from "../assets/images/message.png";
 export const images = {
   driver,
+  message,
 };
 
 const swiperData = [
