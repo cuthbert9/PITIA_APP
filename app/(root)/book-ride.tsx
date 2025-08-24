@@ -3,9 +3,11 @@ import { View, Text } from "react-native";
 
 const bookRide = () => {
   return (
-    <RideLayout>
+    <RideLayout title={"Book Ride"}>
       <View>
-        <Text>Send From Dar to Mbeya</Text>
+        <Text className={"text-2xl font-bold  text-center text-green-700"}>
+          Book Send Mock Text
+        </Text>
       </View>
     </RideLayout>
   );

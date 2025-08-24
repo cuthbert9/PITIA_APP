@@ -3,9 +3,11 @@ import { View, Text } from "react-native";
 
 const confirmRide = () => {
   return (
-    <RideLayout>
+    <RideLayout title={"Choose Rider"}>
       <View>
-        <Text>Confirm Send from Dar to Mbeya</Text>
+        <Text className={"text-2xl font-bold  text-center text-green-700"}>
+          Confirm Send Mock Text
+        </Text>
       </View>
     </RideLayout>
   );

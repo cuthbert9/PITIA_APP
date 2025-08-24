@@ -3,10 +3,10 @@ import { View, Text } from "react-native";
 
 const findRide = () => {
   return (
-    <RideLayout>
+    <RideLayout title={"Ride"}>
       <View>
         <Text className={"text-2xl text-blue-600 mx-auto"}>
-          From dar to mbeya
+          Find Ride Mock Page
         </Text>
       </View>
     </RideLayout>
