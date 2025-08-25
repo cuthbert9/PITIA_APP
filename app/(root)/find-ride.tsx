@@ -6,7 +6,7 @@ const findRide = () => {
     <RideLayout title={"Ride"}>
       <View>
         <Text className={"text-2xl text-blue-600 mx-auto"}>
-          Find Ride Mock Page
+          Find PITIA Mock Text
         </Text>
       </View>
     </RideLayout>

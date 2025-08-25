@@ -6,11 +6,11 @@ const bookRide = () => {
     <RideLayout title={"Book Ride"}>
       <View>
         <Text className={"text-2xl font-bold  text-center text-green-700"}>
-          Book Send Mock Text
+          Book PITIA Route
         </Text>
       </View>
     </RideLayout>
   );
 };
 
-export default bookRide();
+export default bookRide;

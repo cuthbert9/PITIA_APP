@@ -13,7 +13,7 @@ const CustomButton = ({
   return (
     <>
       <TouchableOpacity
-        className={"   bg-blue-500 rounded-lg mx-8 my-2 p-3 "}
+        className={"   bg-blue-500 rounded-3xl mx-8 my-2 p-3 "}
         onPress={onPress}
       >
         <View className={"flex-row  mx-auto"}>

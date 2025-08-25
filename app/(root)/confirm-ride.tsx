@@ -6,7 +6,7 @@ const confirmRide = () => {
     <RideLayout title={"Choose Rider"}>
       <View>
         <Text className={"text-2xl font-bold  text-center text-green-700"}>
-          Confirm Send Mock Text
+          Confirm PITIA Driver
         </Text>
       </View>
     </RideLayout>

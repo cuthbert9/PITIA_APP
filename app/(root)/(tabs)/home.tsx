@@ -41,7 +41,7 @@ const Home = () => {
 
           <TouchableOpacity
             className={"mx-auto my-2 bg-gray-50 border-gray p-1"}
-            onPress={() => router.push(`/(root)/find-ride-ride`)}
+            onPress={() => router.push(`/(root)/find-ride`)}
           >
             <View>
               <Text className={"text-lg"}>Dar-es-salaam, Tanzania</Text>
